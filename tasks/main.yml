@@ -1,2 +1,14 @@
 ---
 # tasks file for win_domain_user
+- name: create domain user
+  win_domain_user:
+    state: present
+    name: bren
+    firstname: Bren
+    surname: Derlin
+    password: Emergent-42-foo!
+    groups:
+      - empire_auditor
+    domain_username: dcadmin@empire.lab-emergent360.com
+    domain_password: Emergent-42-foo!
+    domain_server: empire
