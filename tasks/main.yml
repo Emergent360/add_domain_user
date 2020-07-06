@@ -7,6 +7,7 @@
     firstname: Bren
     surname: Derlin
     password: Emergent-42-foo!
+    update_password: when_changed
     groups:
       - empire_auditor
     domain_username: dcadmin@empire.lab-emergent360.com
