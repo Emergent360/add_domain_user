@@ -2,14 +2,14 @@
 # tasks file for win_domain_user
 - name: manage domain user
   win_domain_user:
-    state: {{ ad_user_state }}
-    enabled: {{ ad_acct_enabled }}
-    name: {{ ad_username }}
-    firstname: {{ ad_user_firstname }}
-    surname: {{ ad_user_surname }}
-    password: {{ ad_user_password }}
-    update_password: {{ ad_update_password }}
-    groups: {{ ad_group_list }}
-    domain_username: {{ ad_domain_username }}
-    domain_password: {{ ad_domain_password }}
-    domain_server: {{ ad_domain_server }}
+    state: "{{ ad_user_state }}"
+    enabled: "{{ ad_acct_enabled }}"
+    name: "{{ ad_username }}"
+    firstname: "{{ ad_user_firstname }}"
+    surname: "{{ ad_user_surname }}"
+    password: "{{ ad_user_password }}"
+    update_password: "{{ ad_update_password }}"
+    groups: "{{ ad_group_list }}"
+    domain_username: "{{ ad_domain_username }}"
+    domain_password: "{{ ad_domain_password }}"
+    domain_server: "{{ ad_domain_server }}"
