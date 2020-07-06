@@ -6,8 +6,8 @@
     name: bren
     firstname: Bren
     surname: Derlin
-    password: "Emergent-42-foo!"
-    update_password: when_changed
+    password: Emergent-42-foo!
+    update_password: on_create
     groups:
       - empire_auditor
     domain_username: dcadmin@empire.lab-emergent360.com
