@@ -6,7 +6,7 @@
     name: bren
     firstname: Bren
     surname: Derlin
-    password: Emergent-42-foo!
+    password: "Emergent-42-foo!"
     update_password: when_changed
     groups:
       - empire_auditor
