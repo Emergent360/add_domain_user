@@ -1,15 +1,15 @@
 ---
 # tasks file for win_domain_user
-- name: create domain user
+- name: manage domain user
   win_domain_user:
-    state: present
-    name: bren
-    firstname: Bren
-    surname: Derlin
-    password: Emergent-42-foo!
-    update_password: on_create
-    groups:
-      - empire_auditor
-    domain_username: dcadmin@empire.lab-emergent360.com
-    domain_password: Emergent-42-foo!
-    domain_server: empire
+    state: {{ ad_user_state }}
+    enabled: {{ ad_acct_enabled }}
+    name: {{ ad_username }}
+    firstname: {{ ad_user_firstname }}
+    surname: {{ ad_user_surname }}
+    password: {{ ad_user_password }}
+    update_password: {{ ad_update_password }}
+    groups: {{ ad_group_list }}
+    domain_username: {{ ad_domain_username }}
+    domain_password: {{ ad_domain_password }}
+    domain_server: {{ ad_domain_server }}
