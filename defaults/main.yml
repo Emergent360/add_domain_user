@@ -1,2 +1,14 @@
 ---
 # defaults file for win_domain_user
+ad_user_state: query
+ad_acct_enabled: yes
+ad_username: jdoe
+ad_user_firstname: John
+ad_user_surname: Doe
+ad_user_password: soutane-99-reward
+ad_update_password: on_create
+ad_group_list:
+  - domain_user
+ad_domain_username: admin@example.com
+ad_domain_password: weevil-42-fracus
+ad_domain_server: domain
