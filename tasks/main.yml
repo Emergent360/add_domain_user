@@ -1,6 +1,6 @@
 ---
 # tasks file for add_domain_user
-- name: manage domain user
+- name: add domain user
   win_domain_user:
     state: "{{ ad_user_state }}"
     enabled: "{{ ad_acct_enabled }}"
