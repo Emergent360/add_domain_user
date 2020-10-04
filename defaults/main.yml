@@ -4,6 +4,7 @@ ansible_port: 5986
 ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
 ansible_winrm_transport: credssp
+ad_domain: "empire.lab-emergent360.com"
 ad_user_state: present
 ad_acct_enabled: yes
 ad_username: luke
@@ -11,3 +12,4 @@ ad_user_firstname: Luke
 ad_user_surname: Skywalker
 ad_update_password: always
 ad_group_list: empire_user
+ad_upn: "{{ ad_username }}@{{ ad_domain }}"
