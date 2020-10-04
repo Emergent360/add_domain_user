@@ -10,6 +10,7 @@
     upn: "{{ ad_upn }}"
     password: "{{ ad_user_password }}"
     update_password: "{{ ad_update_password }}"
+    password_expired: "{{ ad_pw_expired }}"
     groups: "{{ ad_group_list }}"
     domain_username: "{{ ad_domain_username }}"
     domain_password: "{{ ad_domain_password }}"
