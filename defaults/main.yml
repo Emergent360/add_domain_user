@@ -10,7 +10,7 @@ ad_acct_enabled: yes
 ad_username: luke
 ad_user_firstname: Luke
 ad_user_surname: Skywalker
-ad_update_password: always
+ad_update_password: when_changed
 ad_group_list: empire_user
 ad_upn: "{{ ad_username }}@{{ ad_domain }}"
 ad_pw_expired: yes
